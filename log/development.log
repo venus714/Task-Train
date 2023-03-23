@@ -1,0 +1,433 @@
+Started GET "/" for 127.0.0.1 at 2023-03-22 10:33:39 +0300
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/student/.rvm/gems/ruby-2.7.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/student/.rvm/gems/ruby-2.7.2/gems/railties-7.0.4.3/lib/rails/templates/rails/welcome/index.html.erb (Duration: 4.2ms | Allocations: 766)
+Completed 200 OK in 33ms (Views: 14.7ms | ActiveRecord: 0.0ms | Allocations: 6583)
+
+
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (5.3ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230322074131)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "username" varchar NOT NULL, "email" varchar NOT NULL, "password_digest" varchar NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230322074131"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-03-22 07:52:21.689670"], ["updated_at", "2023-03-22 07:52:21.689670"]]
+  [1m[36mTRANSACTION (4.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:21:34 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:21:59 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:18: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:18: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:18: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:23:02 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+...ssable_entity, data:user.error)
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:23:08 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+...ssable_entity, data:user.error)
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:26:46 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+...ssable_entity, data:user.error)
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:19: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:28:07 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+...sable_entity, data: user.error)
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:28:27 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+...sable_entity, data: user.error)
+...                              ^
+):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:29:52 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+...essage: 'Something went wrong', status: :unprocessable_entit...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+...able_entity, data: user.errors)
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:5: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:5: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:9: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:20: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:35:30 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: 'Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+... 'Registration was successful',
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:36:52 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: "Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+... "Registration was successful",
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:38:58 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: "Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+... "Registration was successful", status: :created, data: user)
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:21: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:21: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:21: syntax error, unexpected `end', expecting end-of-input
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:42:45 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: "Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+... "Registration was successful", status: :created, data: user...
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:21: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:21: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:21: syntax error, unexpected `end', expecting end-of-input
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:43:22 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+...         app_response (message: "Registration was successful...
+...                       ^~~~~~~~
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+... "Registration was successful", 
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:6: syntax error, unexpected tLABEL, expecting ')'
+app/controllers/users_controller.rb:6: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:22: syntax error, unexpected `end', expecting end-of-input
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:49:57 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/application_controller.rb:5: syntax error, unexpected `end'
+    end
+    ^~~
+):
+  
+app/controllers/application_controller.rb:5: syntax error, unexpected `end'
+app/controllers/application_controller.rb:5: syntax error, unexpected `end'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:51:01 +0300
+  
+ArgumentError (Unknown validator: 'LegnthValidator'):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:52:17 +0300
+  
+ArgumentError (Unknown validator: 'LegnthValidator'):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:52:42 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ArgumentError (Unknown validator: 'LegnthValidator'):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:54:10 +0300
+  
+ArgumentError (Unknown validator: 'LegnthValidator'):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:54:13 +0300
+  
+ArgumentError (Unknown validator: 'LegnthValidator'):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 11:59:48 +0300
+  
+ArgumentError (Unknown validator: 'LegnthValidator'):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 12:07:11 +0300
+  
+ArgumentError (Unknown validator: 'LegnthValidator'):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+Started POST "/users" for 127.0.0.1 at 2023-03-22 12:12:34 +0300
+Processing by UsersController#register as */*
+  Parameters: {"username"=>"sdf-f-a", "email"=>"mail@mail.com", "password"=>"[FILTERED]", "user"=>{"username"=>"sdf-f-a", "email"=>"mail@mail.com"}}
+[31mUnpermitted parameter: :user. Context: { controller: UsersController, action: register, request: #<ActionDispatch::Request:0x00007fee1c9f6b10>, params: {"username"=>"sdf-f-a", "email"=>"mail@mail.com", "password"=>"[FILTERED]", "controller"=>"users", "action"=>"register", "user"=>{"username"=>"sdf-f-a", "email"=>"mail@mail.com"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:3:in `register'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "sdf-f-a"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "mail@mail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:3:in `register'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "email", "password_digest", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["username", "sdf-f-a"], ["email", "mail@mail.com"], ["password_digest", "[FILTERED]"], ["created_at", "2023-03-22 09:12:35.122849"], ["updated_at", "2023-03-22 09:12:35.122849"]]
+  ↳ app/controllers/users_controller.rb:3:in `register'
+  [1m[36mTRANSACTION (6.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:3:in `register'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? AND "users"."id" != ? LIMIT ?[0m  [["username", "sdf-f-a"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? AND "users"."id" != ? LIMIT ?[0m  [["email", "mail@mail.com"], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `register'
+Completed 200 OK in 391ms (Views: 0.7ms | ActiveRecord: 9.6ms | Allocations: 40008)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateTodos (20230323082530)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "todos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar NOT NULL, "description" text NOT NULL, "status" integer DEFAULT 0 NOT NULL, "priority" integer DEFAULT 0 NOT NULL, "user_id" integer NOT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE INDEX "index_todos_on_user_id" ON "todos" ("user_id")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230323082530"]]
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 11:57:30 +0300
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/todos_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/todos_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/todos_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 11:58:55 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/todos_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/todos_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/todos_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/todos" for 127.0.0.1 at 2023-03-23 11:59:29 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/todos_controller.rb:16: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/todos_controller.rb:16: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/todos_controller.rb:16: syntax error, unexpected end-of-input, expecting `end'
+Started POST "/users/login" for 127.0.0.1 at 2023-03-23 12:00:51 +0300
+  
+SyntaxError (/home/student/TaskTrain/api/app/controllers/users_controller.rb:18: syntax error, unexpected ',', expecting =>
+..."login successful", status::ok, data: user)
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:24: syntax error, unexpected ':', expecting '}'
+        remove_user{message: "success", status::ok}
+                           ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:24: syntax error, unexpected ',', expecting `end'
+...remove_user{message: "success", status::ok}
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:24: syntax error, unexpected '}', expecting `end'
+...message: "success", status::ok}
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:27: syntax error, unexpected ',', expecting `end'
+...p_response(message: "success"), status::ok
+...                              ^
+/home/student/TaskTrain/api/app/controllers/users_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/users_controller.rb:18: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/users_controller.rb:24: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/users_controller.rb:27: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/users_controller.rb:18: syntax error, unexpected ',', expecting =>
+app/controllers/users_controller.rb:24: syntax error, unexpected ':', expecting '}'
+app/controllers/users_controller.rb:24: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:24: syntax error, unexpected '}', expecting `end'
+app/controllers/users_controller.rb:27: syntax error, unexpected ',', expecting `end'
+app/controllers/users_controller.rb:36: syntax error, unexpected end-of-input, expecting `end'
